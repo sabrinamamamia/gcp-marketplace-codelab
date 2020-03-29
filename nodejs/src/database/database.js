@@ -46,11 +46,3 @@ var JsonDatabase = /** @class */ (function () {
     return JsonDatabase;
 }());
 exports.JsonDatabase = JsonDatabase;
-console.log("in main");
-var db = new JsonDatabase();
-db.write("123", { "hello": "world" });
-console.log(db.read("asdadad"));
-console.log(db.getAll());
-console.log(db["delete"]("123"));
-console.log(db.read("123"));
-console.log(db.getAll());
